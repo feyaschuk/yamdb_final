@@ -23,7 +23,7 @@ jobs:
     - name: Test with flake8 and django tests
       with:
         SECRET_KEY: ${{ secrets.SECRET_KEY }} >> .env
-      run: |        
+      script: |        
         python -m flake8                
         #cd yamdb_final/                
         python manage.py test
