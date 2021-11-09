@@ -1,0 +1,13 @@
+**
+
+!api/
+!api_yamdb/
+!reviews/
+!static/
+!templates/
+!manage.py
+!requirements.txt
+!fixtures.json
+
+.idea/
+__pycache__/
