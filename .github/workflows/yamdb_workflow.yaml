@@ -27,6 +27,7 @@ jobs:
     - name: Test with flake8 and django tests
         
       run: |        
+        docker run --env-file ./.env 
         python -m flake8                      
         pytest
 
