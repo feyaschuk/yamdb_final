@@ -22,7 +22,7 @@ services:
       - db
     env_file:
       - ./.env
-
+    command: /entrypoint.sh
   
   nginx:
     
