@@ -22,8 +22,7 @@ services:
       - db
     env_file:
       - ./.env
-    command: /entrypoint.sh
-  
+      
   nginx:
     
     image: nginx:1.19.3
