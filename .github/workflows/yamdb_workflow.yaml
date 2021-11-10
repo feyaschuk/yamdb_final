@@ -11,7 +11,7 @@ jobs:
     - name: Set up Python 
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: ["3.8", "3.9"]
 
     - name: Install dependencies
     
@@ -23,10 +23,7 @@ jobs:
     - name: Test with flake8 and django tests
         
       run: |        
-        python -m flake8
-        
-        
-        #cd yamdb_final/                
+        python -m flake8                      
         pytest
 
   build_and_push_to_docker_hub:
