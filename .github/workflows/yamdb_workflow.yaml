@@ -14,8 +14,7 @@ jobs:
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
-        python-version:  ${{ matrix.python-version }}
-        SECRET_KEY: ${{ secrets.SECRET_KEY }} 
+        python-version:  ${{ matrix.python-version }}       
       
 
     - name: Install dependencies
