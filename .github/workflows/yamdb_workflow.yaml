@@ -9,13 +9,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 
-      uses: actions/setup-python@v2
-      strategy:
+      uses: actions/setup-python@v2      
       matrix:
         python-version: ["3.8", "3.9"]
 
-        #python-version: ["3.8", "3.9"]
-
+        
     - name: Install dependencies
     
       run: | 
