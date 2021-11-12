@@ -26,7 +26,7 @@ Create, Read, Update, Delete title, category, genre, review, comment.
 https://docs.docker.com/get-docker/
 https://docs.docker.com/compose/install/
 ```
-#### Клонировать репозиторий и перейти в него в командной строке:
+#### Clone the repository and go to it on the command line:
 ```
 git clone https://github.com/feyaschuk/yamdb_final.git
 ```
@@ -57,19 +57,19 @@ ssh <USER>@<HOST>
 ```
 #### Run comands afterwards in local deploy, but with 'sudo':
 
-* Выполнить миграции:
+* Run migrations:
 ```
 sudo docker-compose exec web python manage.py migrate --noinput
 ```
-* Создать суперпользователя:
+* Create superuser:
 ```
 sudo docker-compose exec web python manage.py createsuperuser
 ```
-* Загрузить статику -оформление проекта:
+* Load statics - project design:
 ```
 sudo docker-compose exec web python manage.py collectstatic --no-input
 ```
-* Загрузить тестовый объект:
+* Load dump object:
 ```
 sudo docker-compose exec web python manage.py loaddata fixtures.json
 ```
