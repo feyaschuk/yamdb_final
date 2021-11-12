@@ -1,4 +1,4 @@
-# Yamdb_final (Continuous Integration and Continuous Deployment with testing by GithubActions)
+# Yamdb_final 
 ### Workflow status
 ![yamdb_final workflow](https://github.com/feyaschuk/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
 
@@ -18,6 +18,8 @@ Grateful or outraged users leave text reviews for the works and give the work a 
 Getting confirmation code using email and then Auth with JWT-token.
 Permission system for different roles: admin/moderator/user.
 Create, Read, Update, Delete title, category, genre, review, comment.
+
+## Continuous Integration and Continuous Deployment with testing by GithubActions
 
 ### How to use:
 
