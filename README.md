@@ -21,22 +21,22 @@ Create, Read, Update, Delete title, category, genre, review, comment.
 
 ### How to use Continuous Integration and Continuous Deployment with testing by GithubActions:
 
-#### Install Docker and Docker-compose on your server.
+#### 1.Install Docker and Docker-compose on your server.
 ```
 https://docs.docker.com/get-docker/
 https://docs.docker.com/compose/install/
 ```
-#### Clone the repository and go to it on the command line:
+#### 2.Clone the repository and go to it on the command line:
 ```
 git clone https://github.com/feyaschuk/yamdb_final.git
 ```
 
-#### Copy docker-compose.yaml and nginx/default.conf to your server
+#### 3.Copy docker-compose.yaml and nginx/default.conf to your server
 ```
 scp docker-compose.yaml server_username@server:/home/<your_username>/docker-compose.yaml
 scp -r nginx/default.conf server_username@server:/home/<your_username>/nginx/default.conf
 ```
-#### Prepare your repository in GitHub:
+#### 4.Prepare your repository in GitHub:
 In settings of repo find secrets and set in them:
 ```
 DOCKER_PASSWORD, DOCKER_USERNAME - for pull and download image from DockerHub
@@ -48,14 +48,14 @@ SECRET_KEY, ALLOWED_HOSTS - for django app
 DB_ENGINE, DB_NAME, POSTGRES_USER, POSTGRES_PASSWORD, DB_HOST, DB_PORT - to connect to default database
 ```
 
-### After push to github, the main application will pass the tests, update the image on DockerHub, and deploy to the server.
+#### 5.After "push" to github, the main application will pass the tests, update the image on DockerHub, and deploy to the server.
 
-#### Connect to the server
+#### 6.Connect to the server
 In terminal put command:
 ```
 ssh <USER>@<HOST>
 ```
-#### Run comands afterwards in local deploy, but with 'sudo':
+#### 7.Run comands afterwards in local deploy, but with 'sudo':
 
 * Run migrations:
 ```
