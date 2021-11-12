@@ -2,13 +2,14 @@
 ### Workflow status
 ![yamdb_final workflow](https://github.com/feyaschuk/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
 
-* The YaMDb project collects user feedback on various works. The works are divided into categories: "Books", "Films", "Music". The list of categories can be expanded by the administrator.
+#### About
+The YaMDb project collects user feedback on various works. The works are divided into categories: "Books", "Films", "Music". The list of categories can be expanded by the administrator.
 The works themselves are not stored in Review, you can not watch a movie or listen to music here.
 In each category there are works: books, movies or music.
 A work can be assigned a genre from the list of preset ones. Only the administrator can create new genres.
 Grateful or outraged users leave text reviews for the works and give the work a rating in the range from one to ten (an integer); an average rating of the work is formed from user ratings — a rating (an integer). The user can leave only one review for one work.
 
-* Functionality
+#### Functionality
 Getting confirmation code using email and then Auth with JWT-token.
 Permission system for different roles: admin/moderator/user.
 Create, Read, Update, Delete title, category, genre, review, comment.
