@@ -2,6 +2,11 @@
 ### Workflow status
 ![yamdb_final workflow](https://github.com/feyaschuk/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
 
+### link to running project 
+```
+http://130.193.53.130/redoc/
+```
+
 #### About
 The YaMDb project collects user feedback on various works. The works are divided into categories: "Books", "Films", "Music". The list of categories can be expanded by the administrator.
 The works themselves are not stored in Review, you can not watch a movie or listen to music here.
@@ -15,9 +20,10 @@ Permission system for different roles: admin/moderator/user.
 Create, Read, Update, Delete title, category, genre, review, comment.
 
 ### How to use:
-#### Install docker 
+* Install docker 
+```
 https://docs.docker.com/get-docker/
-
+```
 
 
 
