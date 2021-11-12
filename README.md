@@ -1,4 +1,4 @@
-# Yamdb_final
+# Yamdb_final (Continuous Integration and Continuous Deployment with testing by GithubActions)
 ### Workflow status
 ![yamdb_final workflow](https://github.com/feyaschuk/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
 
@@ -19,7 +19,7 @@ Getting confirmation code using email and then Auth with JWT-token.
 Permission system for different roles: admin/moderator/user.
 Create, Read, Update, Delete title, category, genre, review, comment.
 
-### How to use Continuous Integration and Continuous Deployment with testing by GithubActions:
+### How to use:
 
 #### 1. Install Docker and Docker-compose on your server.
 ```
