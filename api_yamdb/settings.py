@@ -2,14 +2,15 @@ import os
 from datetime import timedelta
 
 from dotenv import load_dotenv
-
+from .github import *
 load_dotenv()
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.environ.get('SECRET_KEY', 'the-best-secret-key')
 
-DEBUG = os.environ.get('DEBUG', default=False)
+if environment.name == 'development':
+    DEBUG = os.environ.get('DEBUG', default=False)
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', default='').split(' ')
 AUTH_USER_MODEL = 'reviews.User'
