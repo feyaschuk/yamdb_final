@@ -55,17 +55,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest    
     needs: build_and_push_to_docker_hub 
-    if: ${{ secrets.DEBUG }}
+    if: debug: ${{ secrets.DEBUG }}
     environment: 
       name: production
       url: http://130.193.53.130/redoc/
-    else:
-      environment: 
-      name: development
     steps:
       - name: executing remote ssh commands to deploy
         uses: appleboy/ssh-action@master
-        with:          
+        with:
+          debug: ${{ secrets.DEBUG }}
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
