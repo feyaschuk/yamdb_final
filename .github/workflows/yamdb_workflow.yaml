@@ -87,7 +87,7 @@ jobs:
 
   send_message:
     runs-on: ubuntu-latest
-    needs: deploy
+    needs: deploy_prod
     steps:
     - name: send message
       uses: appleboy/telegram-action@master
