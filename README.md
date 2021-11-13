@@ -1,4 +1,4 @@
-# Yamdb_final d
+# Yamdb_final 
 ### Workflow status
 ![yamdb_final workflow](https://github.com/feyaschuk/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
 <p dir="auto"><a href="https://www.python.org/" rel="nofollow"><img src="https://camo.githubusercontent.com/56f517b8a6a9ae6c1e67721d05ecfb6f6e23da70303349909fc049b44348087e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d507974686f6e2d6666646535373f7374796c653d666c61742d737175617265266c6f676f3d507974686f6e" alt="Python" data-canonical-src="https://img.shields.io/badge/-Python-ffde57?style=flat-square&amp;logo=Python" style="max-width: 100%;"></a>
