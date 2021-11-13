@@ -80,8 +80,6 @@ jobs:
                         
             sudo docker-compose up -d
           environment: production
-            url: http://130.193.53.130/redoc/
-
           only:
           - debug
 
