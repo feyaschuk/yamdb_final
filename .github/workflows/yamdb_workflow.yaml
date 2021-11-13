@@ -55,7 +55,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest    
     needs: build_and_push_to_docker_hub 
-    if: debug: ${{ secrets.DEBUG }}
+    if: ${{ secrets.DEBUG }}
     environment: 
       name: production
       url: http://130.193.53.130/redoc/
